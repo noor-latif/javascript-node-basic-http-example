@@ -5,7 +5,7 @@ const hostname = "127.0.0.1";
 const port = 8000;
 
 // Create HTTP server
-const server = createServer(function(req, res) {
+const server = createServer((req, res) => {
 
    // Set the response HTTP header with HTTP status and Content type
    res.writeHead(200, {'Content-Type': 'text/plain'});
